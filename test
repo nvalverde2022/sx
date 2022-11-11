@@ -1,0 +1,47 @@
+--------------- ------------------------------------  -------------- ---------
+TIME            EVENT-ID                              MSG-ID         SEVERITY
+--------------- ------------------------------------  -------------- ---------
+Mar 09 2021     9c47178c-60c4-69da-dc49-f64c5d2e29b5  PCIEX-8000-0A  Critical 
+
+Problem Status    : isolated
+Diag Engine       : eft / 1.16
+System
+    Manufacturer  : unknown
+    Name          : ORCL,SPARC-T4-4
+    Part_Number   : unknown
+    Serial_Number : AK00102282
+    Host_ID       : 86356f10
+
+----------------------------------------
+Suspect 1 of 1 :
+   Fault class : fault.io.pciex.device-interr
+   Certainty   : 100%
+   Affects     : dev:////pci@600/pci@1/pci@0/pci@4/pci@0/pci@3/SUNW,emlxs@0
+   Status      : faulted and taken out of service
+
+   FRU
+     Location         : "PCI-EM4"
+     Manufacturer     : unknown
+     Name             : unknown
+     Part_Number      : unknown
+     Revision         : unknown
+     Serial_Number    : unknown
+     Chassis
+        Manufacturer  : unknown
+        Name          : ORCL,SPARC-T4-4
+        Part_Number   : 31749249+1+1
+        Serial_Number : AK00102282
+        Status        : faulty/not present
+
+Description : A problem was detected for a PCIEX device.
+
+Response    : One or more device instances may be disabled
+
+Impact      : Loss of services provided by the device instances associated with
+              this fault
+
+Action      : Use 'fmadm faulty' to provide a more detailed view of this event.
+              Please refer to the associated reference document at
+              http://support.oracle.com/msg/PCIEX-8000-0A for the latest
+              service procedures and policies regarding this diagnosis.
+
